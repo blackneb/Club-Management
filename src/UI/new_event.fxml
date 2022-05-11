@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.NewEvent">
+   <children>
+      <Label layoutX="241.0" layoutY="14.0" text="New Event">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="84.0" layoutY="74.0" text="Title" />
+      <Label layoutX="84.0" layoutY="116.0" text="Date" />
+      <Label layoutX="80.0" layoutY="157.0" text="Venue" />
+      <Label layoutX="80.0" layoutY="200.0" text="Content" />
+      <TextField fx:id="neweventtitle" layoutX="173.0" layoutY="70.0" prefHeight="26.0" prefWidth="235.0" />
+      <TextField fx:id="neweventvenue" layoutX="173.0" layoutY="153.0" prefHeight="26.0" prefWidth="235.0" />
+      <TextArea fx:id="neweventcontent" layoutX="173.0" layoutY="200.0" prefHeight="140.0" prefWidth="235.0" />
+      <DatePicker fx:id="neweventdate" layoutX="173.0" layoutY="111.0" prefHeight="26.0" prefWidth="235.0" />
+      <Button fx:id="neweventcreate" layoutX="265.0" layoutY="346.0" mnemonicParsing="false" onAction="#Create_New_Event" text="Create" />
+   </children>
+</AnchorPane>

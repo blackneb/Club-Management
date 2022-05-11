@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MemberEvent">
+   <children>
+      <Label layoutX="286.0" layoutY="14.0" text="Events">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="eventmembertable" layoutX="-1.0" layoutY="49.0" prefHeight="450.0" prefWidth="700.0">
+        <columns>
+          <TableColumn fx:id="eid" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="etitle" prefWidth="80.19998168945312" text="Title" />
+          <TableColumn fx:id="econtent" prefWidth="378.19996643066406" text="Content" />
+          <TableColumn fx:id="evenue" prefWidth="92.0" text="Venue" />
+          <TableColumn fx:id="etime" prefWidth="75.79998779296875" text="Time" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Main_Controller">
+   <children>
+      <BorderPane fx:id="borderpane" prefHeight="650.0" prefWidth="900.0">
+         <left>
+            <AnchorPane prefHeight="650.0" prefWidth="200.0" style="-fx-background-color: lightgrey;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button layoutX="37.0" layoutY="98.0" mnemonicParsing="false" onAction="#Register" prefHeight="30.0" prefWidth="150.0" text="Home" />
+                  <Button layoutX="37.0" layoutY="165.0" mnemonicParsing="false" onAction="#Announcement" prefHeight="30.0" prefWidth="150.0" text="Announcement" />
+                  <Button layoutX="37.0" layoutY="222.0" mnemonicParsing="false" onAction="#Event" prefHeight="30.0" prefWidth="150.0" text="Event" />
+               </children>
+            </AnchorPane>
+         </left>
+         <top>
+            <AnchorPane prefHeight="80.0" prefWidth="900.0" style="-fx-background-color: lightgrey;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button layoutX="367.0" layoutY="27.0" mnemonicParsing="false" onAction="#Go_To_Admin_Panel" prefHeight="25.0" prefWidth="100.0" text="Admin" />
+                  <Button layoutX="521.0" layoutY="27.0" mnemonicParsing="false" onAction="#Go_To_Member_Panel" prefHeight="25.0" prefWidth="100.0" text="Member" />
+                  <Button fx:id="logout" layoutX="834.0" layoutY="27.0" mnemonicParsing="false" onAction="#Log_out" text="Logout" />
+               </children>
+            </AnchorPane>
+         </top>
+         <center>
+            <AnchorPane fx:id="mainanchorpane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>

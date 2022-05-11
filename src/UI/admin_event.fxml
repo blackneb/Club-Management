@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="admineventrootpane" prefHeight="500.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AdminEvent">
+   <children>
+      <Label layoutX="218.0" layoutY="37.0" prefHeight="40.0" prefWidth="164.0" text="Event Management">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Button fx:id="newevent" layoutX="83.0" layoutY="77.0" mnemonicParsing="false" onAction="#Create_New_Event" text="New Event" />
+      <Button fx:id="deleteevent" layoutX="218.0" layoutY="77.0" mnemonicParsing="false" onAction="#Delete_Events" text="Delete Event" />
+      <TableView fx:id="eventtable" layoutX="-1.0" layoutY="110.0" prefHeight="450.0" prefWidth="700.0">
+        <columns>
+          <TableColumn fx:id="eventid" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="titleid" prefWidth="170.60000610351562" text="Title" />
+          <TableColumn fx:id="venueid" prefWidth="241.19996643066406" text="Venue" />
+          <TableColumn fx:id="timeid" prefWidth="212.4000244140625" text="Time" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

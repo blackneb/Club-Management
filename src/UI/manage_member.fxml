@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="rootpane" prefHeight="500.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ManageMember">
+   <children>
+      <Label layoutX="175.0" layoutY="7.0" prefHeight="50.0" prefWidth="250.0" text="Members Management">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Button layoutX="35.0" layoutY="57.0" mnemonicParsing="false" onAction="#Register_Member" text="Add new member" />
+      <TableView fx:id="mainTable" layoutX="4.0" layoutY="87.0" prefHeight="450.0" prefWidth="700.0">
+        <columns>
+          <TableColumn fx:id="idcol" prefWidth="115.0" text="ID" />
+          <TableColumn fx:id="namecol" prefWidth="225.20001983642578" text="Name" />
+          <TableColumn fx:id="dobcol" minWidth="5.199981689453125" prefWidth="165.79995727539062" text="DOB" />
+          <TableColumn fx:id="departmentcol" prefWidth="192.0" text="Department" />
+
+        </columns>
+      </TableView>
+      <Button layoutX="248.0" layoutY="57.0" mnemonicParsing="false" onAction="#Update_Member" text="Update Member" />
+      <Button layoutX="450.0" layoutY="57.0" mnemonicParsing="false" onAction="#Delete_Member" text="Delete Member" />
+   </children>
+</AnchorPane>
