@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="adminannouncementrootpane" prefHeight="500.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AdminAnnouncement">
+   <children>
+      <Label layoutX="200.0" layoutY="46.0" prefHeight="50.0" prefWidth="200.0" text="Announcement Management">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="newannouncement" layoutX="125.0" layoutY="96.0" mnemonicParsing="false" onAction="#Create_New_Announcement" text="New Announcement" />
+      <TableView fx:id="admintable" layoutY="124.0" prefHeight="450.0" prefWidth="700.0">
+        <columns>
+          <TableColumn fx:id="annid" prefWidth="76.20001375675201" text="ID" />
+          <TableColumn fx:id="anntitle" prefWidth="356.0000228881836" text="Title" />
+          <TableColumn fx:id="anndate" prefWidth="266.3999938964844" text="Date" />
+        </columns>
+      </TableView>
+      <Button fx:id="announcementmanagementdelete" layoutX="292.0" layoutY="96.0" mnemonicParsing="false" onAction="#Go_Delete_Announcement" text="Delete Announcement" />
+   </children>
+</AnchorPane>

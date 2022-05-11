@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MemberAnnouncement">
+   <children>
+      <Label layoutX="235.0" layoutY="14.0" text="Announcements">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="memberanntable" layoutY="58.0" prefHeight="450.0" prefWidth="700.0">
+        <columns>
+          <TableColumn fx:id="manid" prefWidth="107.19999539852142" text="ID" />
+          <TableColumn fx:id="mantitle" prefWidth="130.9999771118164" text="Title" />
+          <TableColumn fx:id="mancontent" prefWidth="363.199951171875" text="Content" />
+          <TableColumn fx:id="mandate" prefWidth="98.4000244140625" text="Date" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
